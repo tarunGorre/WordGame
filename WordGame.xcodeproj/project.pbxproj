@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BAE486522E1F8AD003D778E /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE486422E1F8AD003D778E /* JsonParserTests.swift */; };
+		1BAE486722E1FABE003D778E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE486622E1FABE003D778E /* ViewControllerTests.swift */; };
 		1BE1196322DE6D0200D49286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1196222DE6D0200D49286 /* AppDelegate.swift */; };
 		1BE1196522DE6D0200D49286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1196422DE6D0200D49286 /* ViewController.swift */; };
 		1BE1196822DE6D0200D49286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE1196622DE6D0200D49286 /* Main.storyboard */; };
 		1BE1196A22DE6D0300D49286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE1196922DE6D0300D49286 /* Assets.xcassets */; };
 		1BE1196D22DE6D0300D49286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE1196B22DE6D0300D49286 /* LaunchScreen.storyboard */; };
-		1BE1197822DE6D0300D49286 /* WordGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1197722DE6D0300D49286 /* WordGameTests.swift */; };
+		1BE1198322DE742C00D49286 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1198222DE742C00D49286 /* WordModel.swift */; };
+		1BE1198622DE74B600D49286 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE1198522DE74B600D49286 /* JsonParser.swift */; };
+		1BE1198922DE778000D49286 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BE1198822DE778000D49286 /* words.json */; };
+		1BE1198A22DE778000D49286 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BE1198822DE778000D49286 /* words.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BAE486422E1F8AD003D778E /* JsonParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParserTests.swift; sourceTree = "<group>"; };
+		1BAE486622E1FABE003D778E /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		1BE1195F22DE6D0200D49286 /* WordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE1196222DE6D0200D49286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE1196422DE6D0200D49286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +41,10 @@
 		1BE1196C22DE6D0300D49286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE1196E22DE6D0300D49286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE1197322DE6D0300D49286 /* WordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BE1197722DE6D0300D49286 /* WordGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameTests.swift; sourceTree = "<group>"; };
 		1BE1197922DE6D0300D49286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE1198222DE742C00D49286 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		1BE1198522DE74B600D49286 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		1BE1198822DE778000D49286 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,9 @@
 			children = (
 				1BE1196222DE6D0200D49286 /* AppDelegate.swift */,
 				1BE1196422DE6D0200D49286 /* ViewController.swift */,
+				1BE1198222DE742C00D49286 /* WordModel.swift */,
+				1BE1198522DE74B600D49286 /* JsonParser.swift */,
+				1BE1198822DE778000D49286 /* words.json */,
 				1BE1196622DE6D0200D49286 /* Main.storyboard */,
 				1BE1196922DE6D0300D49286 /* Assets.xcassets */,
 				1BE1196B22DE6D0300D49286 /* LaunchScreen.storyboard */,
@@ -90,7 +102,8 @@
 		1BE1197622DE6D0300D49286 /* WordGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				1BE1197722DE6D0300D49286 /* WordGameTests.swift */,
+				1BAE486422E1F8AD003D778E /* JsonParserTests.swift */,
+				1BAE486622E1FABE003D778E /* ViewControllerTests.swift */,
 				1BE1197922DE6D0300D49286 /* Info.plist */,
 			);
 			path = WordGameTests;
@@ -149,6 +162,7 @@
 					};
 					1BE1197222DE6D0300D49286 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 1BE1195E22DE6D0200D49286;
 					};
 				};
@@ -178,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE1196D22DE6D0300D49286 /* LaunchScreen.storyboard in Resources */,
+				1BE1198922DE778000D49286 /* words.json in Resources */,
 				1BE1196A22DE6D0300D49286 /* Assets.xcassets in Resources */,
 				1BE1196822DE6D0200D49286 /* Main.storyboard in Resources */,
 			);
@@ -187,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE1198A22DE778000D49286 /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE1196522DE6D0200D49286 /* ViewController.swift in Sources */,
+				1BE1198322DE742C00D49286 /* WordModel.swift in Sources */,
+				1BE1198622DE74B600D49286 /* JsonParser.swift in Sources */,
 				1BE1196322DE6D0200D49286 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE1197822DE6D0300D49286 /* WordGameTests.swift in Sources */,
+				1BAE486722E1FABE003D778E /* ViewControllerTests.swift in Sources */,
+				1BAE486522E1F8AD003D778E /* JsonParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,6 +416,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WordGameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarungorre.WordGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordGame.app/WordGame";
@@ -415,6 +438,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WordGameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
