@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     var allWords: [WordModel] = []
     var allSpanishWords: [String] = []
+    var randomSpanishWords: [String] = []
 
     var correctAnswers = 0
     var wrongAnswers = 0
@@ -172,7 +173,7 @@ class ViewController: UIViewController {
     }
     
     func addAnimations() {
-        self.fallingLabel.text = allSpanishWords.randomElement()
+        self.fallingLabel.text = probabilityOfCorrectWord()
         animator = UIViewPropertyAnimator(duration: 20, curve: .linear) {
             self.fallingLabel.transform = CGAffineTransform.identity.translatedBy(x: 0, y: UIScreen.main.bounds.maxY + self.fallingLabel.frame.size.height)
         }
@@ -187,6 +188,18 @@ class ViewController: UIViewController {
         }
     }
     
-
+    func probabilityOfCorrectWord() -> String {
+        let correctSpaWord = translateEngToSpanish()
+        let randomSpaWord = allSpanishWords.randomElement()
+        randomSpanishWords.append(randomSpaWord!)
+        if randomSpanishWords.count == 5 {
+            if !randomSpanishWords.contains(correctSpaWord) {
+                randomSpanishWords.removeAll()
+                return correctSpaWord
+            }
+        }
+        
+        return randomSpaWord!
+    }
 }
 
